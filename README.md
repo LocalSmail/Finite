@@ -1,6 +1,8 @@
 # Finite
 Finite is a Script-Ware Dashboard theme.
 
+Uses the Mollarbar released by a user called: Jack#9701
+
 # Overview Of Finite
 
 <p align="center">
