@@ -1,0 +1,261 @@
+
+*{
+    --background-color: rgb(22, 28, 36);
+    --background-color-2: rgb(33, 43, 54);
+    --background-color-3: rgb(33, 43, 54);
+    --color-error: rgb(228, 91, 91);
+    --color-success: rgb(66, 162, 81);
+    --color-main: rgb(98, 92, 214);
+    --color-text: rgb(255, 255, 255);
+    --color-hover: rgb(59, 69, 99);
+}
+
+::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+.headerClock>span {
+    margin: 0;
+    font-size: 1rem; 
+    line-height: 20px;
+    transform: translateY(-1px);
+    color: #fff;
+}
+
+/* Start of profile stuff */
+
+.profileHeader .profileHeaderText h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsla(0,0%,100%,.38039);
+    filter: blur(8px) !important;
+    transition: all, 1;
+}
+
+.profileHeader .profileHeaderText h2:hover {
+    filter: blur(0) !important;
+}
+
+.profileHeader {
+    height: 120px;
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 2rem !important;
+}
+
+.profile .header .main .primaryHeader {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 2px 14px 5px rgb(0 0 0 / 59%) !important;
+}
+
+/* Block and Add friend stuff */
+
+.profile .header .main .friendControls .friendAction p {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    z-index: 5;
+    background: var(--color-main);
+    padding: 4px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.profile .header .main .friendControls .friendAction p:hover {
+    opacity: 1;
+}
+
+.profile .header .bio .bioBox {
+    box-shadow: 0px 2px 14px 5px rgb(0 0 0 / 59%) !important;
+}
+
+.profile .scripts {
+    box-shadow: 0px 2px 14px 5px rgb(0 0 0 / 59%) !important;
+}
+
+.scriptDisplay .displayText {
+    margin-left: 10px;
+    float: left;
+    width: calc(100% - 150px);
+    font-size: inherit !important;
+}
+
+.scriptDisplay>.scriptImage .openSourceIcon {
+    position: absolute;
+    margin: 7px;
+    right: 0;
+    top: 0;
+    color: #fff;
+}
+
+/* End of profile stuff */
+
+
+/* Start of main stuff */
+
+.welcomeMessage {
+    margin-bottom: 50px;
+    padding-left: 1rem;
+}
+
+.indexFlex .section1 {
+    flex-grow: 2;
+    box-shadow: 0px 2px 14px 5px rgb(0 0 0 / 59%) !important;
+}
+
+.indexDownload {
+    margin-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 1rem;
+}
+
+.JumpToFlex {
+    width: 80%;
+    display: flex;
+    padding-right: 30px;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.exploreContainer {
+    width: 100%;
+    margin-top: 50px;
+    padding-left: 1rem;
+}
+
+/* End of main stuff */
+
+/* Support page */
+
+.preTicket {
+    text-align: center;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 14px 5px rgb(0 0 0 / 59%) !important;
+}
+
+
+/* Start of settings stuff */
+
+.settingsCore {
+    margin: 0 auto !important;
+    max-width: 1000px !important;
+    padding-bottom: 30px !important;
+    position: relative !important;
+    box-shadow: 0px 2px 14px 5px rgba(0,0,0,0.59) !important;
+}
+
+.settingsCore .settingsSection .settings tr td button {
+    font-size: 18px;
+    margin: 15px;
+    padding: 5px;
+    display: inline-block;
+}
+
+/* End of settings stuff */
+
+
+/* Start of nabar stuff */
+
+.dashSidebar .dashNav .home.nuxt-link-exact-active, .dashSidebar .dashNav .nuxt-link-active:not(.home) {
+    border-color: transparent;
+    background-color: var(--color-hover);
+}
+
+.dashSidebar .__view {
+	display: flex !important;
+	flex-direction: row;
+	height: 100px !important;
+	position: fixed !important;
+	bottom: 20px;
+	z-index: 100;
+	min-height: unset !important;
+	min-width: unset !important;
+	overflow: hidden;
+	left: 50%;
+	max-width: max-content !important;
+	width: 100% !important;
+	overflow-x: auto;
+	transform: translateX(-50%);
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+    opacity: 0.8;
+	background: rgb(0, 0, 0);
+	backdrop-filter: blur(50px);
+	padding: 1rem;
+	gap: 1ch;
+}
+.dashSidebar,
+.dashNav,
+.dashNavInner,
+.__panel {
+	display: contents !important;
+}
+
+.dashSidebar .__view > a {
+	/* padding: 16px; */
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+	padding-top: 8px !important;
+	padding-bottom: 8px !important;
+	margin: 0;
+	cursor: default !important;
+	text-align: center;
+	display: flex !important;
+	align-items: center !important;
+	flex-direction: row !important;
+	border-left: auto !important;
+	height: 50px !important;
+	position: relative;
+	background: none;
+	border: none;
+	border-radius: 16px;
+	gap: 0;
+	fill: currentColor;
+	/* border-bottom-right-radius: 16px; */
+	/* border-top-left-radius: 16px; */
+	transition: background 0.3s, gap 0.3s, font-size 0.3s;
+}
+.dashSidebar .__view > a:hover {
+	outline: 0;
+	gap: 1ch;
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.5) !important;
+}
+.dashSidebar .__view > a:active {
+	background: rgba(255, 255, 255, 0.7) !important;
+}
+a[aria-current='page'] {
+	background: transparent !important;
+}
+.dashSidebar .__view > a span {
+	display: block;
+	white-space: pre;
+	line-height: 0 !important;
+	font-size: 0 !important;
+	font-family: 'Segoe UI Variable', 'Segoe UI Variable Display', 'Segoe UI',
+		sans-serif;
+	font-weight: bold !important;
+	transition: font-size 0.3s;
+}
+.dashSidebar .__view > a svg {
+	margin-top: 0 !important;
+}
+.dashSidebar .__view > a span svg {
+	display: none;
+}
+.dashSidebar .__view > a:hover span {
+	font-size: small !important;
+}
+
+/* End of navbar stuff */
